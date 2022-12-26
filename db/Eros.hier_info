@@ -1,0 +1,16 @@
+|projetotest
+exit[1] <= inst5[0].DB_MAX_OUTPUT_PORT_TYPE
+exit[0] <= inst5[1].DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst6[0].IN0
+B[0] => inst[0].IN1
+B[1] => inst6[1].IN0
+B[1] => inst[1].IN1
+A[0] => inst6[0].IN1
+A[0] => inst[0].IN0
+A[1] => inst6[1].IN1
+A[1] => inst[1].IN0
+seletor => inst7.IN0
+seletor => inst3[1].IN1
+seletor => inst3[0].IN1
+
+

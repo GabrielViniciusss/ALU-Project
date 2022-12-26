@@ -1,0 +1,652 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ULA
+# storage
+db|celula.(1).cnf
+db|celula.(1).cnf
+# case_insensitive
+# source_file
+ula.bdf
+7e12a54cece7eb69de19f707d855fea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+mux1Bit
+# storage
+db|celula.(2).cnf
+db|celula.(2).cnf
+# case_insensitive
+# source_file
+mux1bit.bdf
+3e65c9a4a4cd2ee4f385a524c3aa4a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|mux1Bit:inst17
+}
+# macro_sequence
+
+# end
+# entity
+ComparadorMaior
+# storage
+db|celula.(3).cnf
+db|celula.(3).cnf
+# case_insensitive
+# source_file
+comparadormaior.bdf
+16cecf87a7e70054d279ed162b63de
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|ComparadorMaior:inst22
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst
+}
+# macro_sequence
+
+# end
+# entity
+COMPSINAL
+# storage
+db|celula.(4).cnf
+db|celula.(4).cnf
+# case_insensitive
+# source_file
+compsinal.bdf
+166ba8286a4837e68a89f6027a727bb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|ComparadorMaior:inst22|COMPSINAL:inst1
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst|COMPSINAL:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Comparador1Bit
+# storage
+db|celula.(5).cnf
+db|celula.(5).cnf
+# case_insensitive
+# source_file
+comparador1bit.bdf
+d69149a97bf125669ad6259ffd84dc1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|ComparadorMaior:inst22|Comparador1Bit:inst8
+ULA:inst|ComparadorMaior:inst22|Comparador1Bit:inst7
+ULA:inst|ComparadorMaior:inst22|Comparador1Bit:inst6
+ULA:inst|ComparadorMaior:inst22|Comparador1Bit:inst4
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst|Comparador1Bit:inst8
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst|Comparador1Bit:inst7
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst|Comparador1Bit:inst6
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst|Comparador1Bit:inst4
+ULA:inst|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst8
+ULA:inst|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst7
+ULA:inst|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst6
+ULA:inst|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst4
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst8
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst7
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst6
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|CompararMagnitudeMaior:inst|Comparador1Bit:inst4
+}
+# macro_sequence
+
+# end
+# entity
+CompararIgualdade
+# storage
+db|celula.(6).cnf
+db|celula.(6).cnf
+# case_insensitive
+# source_file
+compararigualdade.bdf
+a12711643f4be778b1471892390cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|ComparadorMaior:inst22|CompararIgualdade:inst2
+ULA:inst|CompararIgualdade:inst23
+ULA:inst|ComparadorMenor:inst19|CompararIgualdade:inst1
+ULA:inst|ComparadorMenor:inst19|ComparadorMaior:inst|CompararIgualdade:inst2
+}
+# macro_sequence
+
+# end
+# entity
+ComparadorMenor
+# storage
+db|celula.(7).cnf
+db|celula.(7).cnf
+# case_insensitive
+# source_file
+comparadormenor.bdf
+bd71f9edafca252e8758544f05950cd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|ComparadorMenor:inst19
+}
+# macro_sequence
+
+# end
+# entity
+MUX5Bits
+# storage
+db|celula.(8).cnf
+db|celula.(8).cnf
+# case_insensitive
+# source_file
+mux5bits.bdf
+32ab1d15e729e849c9d8523e3113f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|MUX5Bits:inst6
+}
+# macro_sequence
+
+# end
+# entity
+CircuitoAND
+# storage
+db|celula.(9).cnf
+db|celula.(9).cnf
+# case_insensitive
+# source_file
+circuitoand.bdf
+3794f0568d30abd4dc3165e49f671c9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|CircuitoAND:inst5
+}
+# macro_sequence
+
+# end
+# entity
+Complemento2
+# storage
+db|celula.(10).cnf
+db|celula.(10).cnf
+# case_insensitive
+# source_file
+complemento2.bdf
+8b4457f24d45bc7acca089e58d6677ae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Complemento2:inst2
+ULA:inst|SomadorCompleto:inst|Complemento2:inst10
+ULA:inst|SomadorCompleto:inst|Complemento2:inst8
+ULA:inst|SomadorCompleto:inst|Complemento2:inst9
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst10
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst8
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst9
+}
+# macro_sequence
+
+# end
+# entity
+celula
+# storage
+db|celula.(11).cnf
+db|celula.(11).cnf
+# case_insensitive
+# source_file
+celula.bdf
+6ef75d31ce1cbe32bb5d0eae975f3c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Complemento2:inst2|celula:inst12
+ULA:inst|Complemento2:inst2|celula:inst13
+ULA:inst|Complemento2:inst2|celula:inst14
+ULA:inst|Complemento2:inst2|celula:inst15
+ULA:inst|Complemento2:inst2|celula:inst20
+ULA:inst|SomadorCompleto:inst|Complemento2:inst10|celula:inst12
+ULA:inst|SomadorCompleto:inst|Complemento2:inst10|celula:inst13
+ULA:inst|SomadorCompleto:inst|Complemento2:inst10|celula:inst14
+ULA:inst|SomadorCompleto:inst|Complemento2:inst10|celula:inst15
+ULA:inst|SomadorCompleto:inst|Complemento2:inst10|celula:inst20
+ULA:inst|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst10
+ULA:inst|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst11
+ULA:inst|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst12
+ULA:inst|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst8
+ULA:inst|SomadorCompleto:inst|Complemento2:inst8|celula:inst12
+ULA:inst|SomadorCompleto:inst|Complemento2:inst8|celula:inst13
+ULA:inst|SomadorCompleto:inst|Complemento2:inst8|celula:inst14
+ULA:inst|SomadorCompleto:inst|Complemento2:inst8|celula:inst15
+ULA:inst|SomadorCompleto:inst|Complemento2:inst8|celula:inst20
+ULA:inst|SomadorCompleto:inst|Complemento2:inst9|celula:inst12
+ULA:inst|SomadorCompleto:inst|Complemento2:inst9|celula:inst13
+ULA:inst|SomadorCompleto:inst|Complemento2:inst9|celula:inst14
+ULA:inst|SomadorCompleto:inst|Complemento2:inst9|celula:inst15
+ULA:inst|SomadorCompleto:inst|Complemento2:inst9|celula:inst20
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst10|celula:inst12
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst10|celula:inst13
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst10|celula:inst14
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst10|celula:inst15
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst10|celula:inst20
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst10
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst11
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst12
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|somadorMagnitude:inst5|celula:inst8
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst8|celula:inst12
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst8|celula:inst13
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst8|celula:inst14
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst8|celula:inst15
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst8|celula:inst20
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst9|celula:inst12
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst9|celula:inst13
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst9|celula:inst14
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst9|celula:inst15
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|Complemento2:inst9|celula:inst20
+}
+# macro_sequence
+
+# end
+# entity
+SomadorCompleto
+# storage
+db|celula.(12).cnf
+db|celula.(12).cnf
+# case_insensitive
+# source_file
+somadorcompleto.bdf
+54aa51a8548a613b555b9499c4e36
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst
+ULA:inst|Substrator:inst9|SomadorCompleto:inst
+}
+# macro_sequence
+
+# end
+# entity
+SomaFinal
+# storage
+db|celula.(13).cnf
+db|celula.(13).cnf
+# case_insensitive
+# source_file
+somafinal.bdf
+81daf2dc80b272858b7c5f54fc1d0b4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|SomaFinal:inst3
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|SomaFinal:inst3
+}
+# macro_sequence
+
+# end
+# entity
+VerificaSinal2
+# storage
+db|celula.(14).cnf
+db|celula.(14).cnf
+# case_insensitive
+# source_file
+verificasinal2.bdf
+c61f60a1ce1a87e682346290de791f40
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|VerificaSinal2:inst7
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal2:inst7
+}
+# macro_sequence
+
+# end
+# entity
+seletorSinal
+# storage
+db|celula.(15).cnf
+db|celula.(15).cnf
+# case_insensitive
+# source_file
+seletorsinal.bdf
+583e91e305a637eb55f5aec1e2bb214
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst
+ULA:inst|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst1
+ULA:inst|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst2
+ULA:inst|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst3
+ULA:inst|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst4
+ULA:inst|SomadorCompleto:inst|somadorMagnitude:inst5|seletorSinal:inst2
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst1
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst2
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst3
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst4
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst1
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst2
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst3
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst4
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst1
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst2
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst3
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal2:inst7|seletorSinal:inst4
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|somadorMagnitude:inst5|seletorSinal:inst2
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst1
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst2
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst3
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst1|seletorSinal:inst4
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst1
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst2
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst3
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst2|seletorSinal:inst4
+}
+# macro_sequence
+
+# end
+# entity
+CompararMagnitudeMaior
+# storage
+db|celula.(16).cnf
+db|celula.(16).cnf
+# case_insensitive
+# source_file
+compararmagnitudemaior.bdf
+e8c81043a872bc31f7791ea038f9121
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|CompararMagnitudeMaior:inst
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|CompararMagnitudeMaior:inst
+}
+# macro_sequence
+
+# end
+# entity
+CompararMagnitudeIgual
+# storage
+db|celula.(17).cnf
+db|celula.(17).cnf
+# case_insensitive
+# source_file
+compararmagnitudeigual.bdf
+177b802f58ab706165363636f34fd31
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|CompararMagnitudeIgual:inst4
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|CompararMagnitudeIgual:inst4
+}
+# macro_sequence
+
+# end
+# entity
+somadorMagnitude
+# storage
+db|celula.(18).cnf
+db|celula.(18).cnf
+# case_insensitive
+# source_file
+somadormagnitude.bdf
+31282c9ff1c6c4b39a741960959afad
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|somadorMagnitude:inst5
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|somadorMagnitude:inst5
+}
+# macro_sequence
+
+# end
+# entity
+VerificaSinal
+# storage
+db|celula.(19).cnf
+db|celula.(19).cnf
+# case_insensitive
+# source_file
+verificasinal.bdf
+ef1329f99ca6048f61ec1807980f4a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst1
+ULA:inst|SomadorCompleto:inst|VerificaSinal:inst2
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst1
+ULA:inst|Substrator:inst9|SomadorCompleto:inst|VerificaSinal:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Substrator
+# storage
+db|celula.(20).cnf
+db|celula.(20).cnf
+# case_insensitive
+# source_file
+substrator.bdf
+3794af65985ea14ccd66de2d2975abaa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Substrator:inst9
+}
+# macro_sequence
+
+# end
+# entity
+InverterSinalB
+# storage
+db|celula.(21).cnf
+db|celula.(21).cnf
+# case_insensitive
+# source_file
+invertersinalb.bdf
+a6083e32b5a3188bc4a137e6b848ca
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Substrator:inst9|InverterSinalB:inst3
+}
+# macro_sequence
+
+# end
+# entity
+CircuitoXOR
+# storage
+db|celula.(22).cnf
+db|celula.(22).cnf
+# case_insensitive
+# source_file
+circuitoxor.bdf
+c341463cacc34fe2812e0ff72a2434c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|CircuitoXOR:inst8
+}
+# macro_sequence
+
+# end
+# entity
+DecodificadorEntrada
+# storage
+db|celula.(23).cnf
+db|celula.(23).cnf
+# case_insensitive
+# source_file
+decodificadorentrada.bdf
+89fadf65669c7e3660bd5b4764d4a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DecodificadorEntrada:inst11
+DecodificadorEntrada:inst10
+}
+# macro_sequence
+
+# end
+# entity
+DECODIFICADOR
+# storage
+db|celula.(24).cnf
+db|celula.(24).cnf
+# case_insensitive
+# source_file
+decodificador.bdf
+7bc345c4bb34e752e0f28ad42d2aa4b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DECODIFICADOR:inst4
+}
+# macro_sequence
+
+# end
+# entity
+DisplayVerifica
+# storage
+db|celula.(25).cnf
+db|celula.(25).cnf
+# case_insensitive
+# source_file
+displayverifica.bdf
+fca2e326ca318d0a9e58738bed8bdc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DisplayVerifica:inst1
+}
+# macro_sequence
+
+# end
+# entity
+CircuitoCompleto
+# storage
+db|celula.(0).cnf
+db|celula.(0).cnf
+# case_insensitive
+# source_file
+circuitocompleto.bdf
+7e2cdb673fda94157be1a4c7488048d3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

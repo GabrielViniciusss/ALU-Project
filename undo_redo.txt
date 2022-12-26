@@ -1,0 +1,24 @@
+GED
+
+	Undo Commands
+	     1.	Delete
+	     2.	Move
+	     3.	Paste
+	     4.	Insert Symbol
+	     5.	Delete
+	     6.	Delete
+
+
+GED
+
+	Redo Commands
+	     1.	Delete
+
+
+GED
+
+	Undo Commands
+	     1.	Move
+	     2.	Paste
+
+
